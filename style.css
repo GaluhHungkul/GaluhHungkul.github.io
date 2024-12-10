@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px 10px;
+    padding: 1000px 0 0 50px;
+
+}
+
+.children {
+    width: 400px;
+    height: 100px;
+    box-shadow: 0 0 10px black;
+    /* transition: .2s; */
+    cursor: pointer;
+    
+    /* animation: appear 5s linear; */
+}
+
+.children:hover {
+    background-color: grey;
+}
+
+@keyframes appear {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+        scale: 0.5;
+    }
+    
+    to {
+        transform: translateX(0);
+        opacity: 1;
+        scale: 1;
+    }
+}
