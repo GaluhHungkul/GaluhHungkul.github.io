@@ -1,3 +1,8 @@
+body {
+    background-color: black;
+    color: white;
+}
+
 h1 {
     text-align: center;
 }
@@ -13,7 +18,7 @@ h1 {
 .children {
     width: 400px;
     height: 100px;
-    box-shadow: 0 0 10px black;
+    border: 1px solid white;
     /* transition: .2s; */
     cursor: pointer;
     
@@ -21,7 +26,8 @@ h1 {
 }
 
 .children:hover {
-    background-color: grey;
+    background-color: cyan;
+    box-shadow : 0 0 40px yellow;
 }
 
 @keyframes appear {
